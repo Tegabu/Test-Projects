@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .hero{
+        width: 100%;
+        height: 100vh;
+        background: url(../../img/slide1.jpg) center center no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-right: 20px;
+        overflow: hidden;
+        z-index: 1;
+        .hero-info{
+            width: 50%;
+            height: 50%;
+            margin-top: 100px;
+            color: oldlace;
+            padding: 20px 40px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            font-family: "Open sans" ,sans-serif;
+            h1{
+                font-family: "Andada Pro" ,sans-serif;
+                font-size: 4rem;
+                text-transform: uppercase;
+                letter-spacing: .1rem;
+                font-size: 400;
+            }
+            h2{
+                font-size: 3.5rem;
+                font-family: "Andada Pro" ,sans-serif;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+                letter-spacing: .1rem;
+                font-size: 400;
+            }
+            p{
+                font-size: 1.5rem;
+                font-family: "Andada Pro", sans-serif;
+            }
+         }
+    }
+     .hero::after{
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            position: absolute;
+            opacity: .5;
+            z-index: -1;
+        }
+    
+    
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 20px;
+        margin-right: 50px;
+        flex-direction: row;
+        padding: 20px 40px;
+        transition: .3s ease;
+        :hover{
+            color: rgb(179, 69, 18);
+        }
+        li{
+            padding: none;
+            margin: none;
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: #fff;
+                font-family: "Open sans", sans-serif;
+                font-weight: 300;
+                font-size: 1.3rem;
+                margin-left: 50px;
+                text-transform: capitalize;
+                
+
+            }
+        }
+    }
+
+    
+
+  
+}
+.main-sec{
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   /* background: url(../../img/coffee.jpg) center center no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;*/
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    .sec-1{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        h1{
+            font-family: "Open sans" ,sans-serif;
+            font-size: 2rem;
+            font-weight: 400;
+            color: #fff;
+        }
+    }
+
+    .sec1-ex{
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin-bottom: 100px;
+        .ex-1{
+        .ex-img{
+            width: 400px;
+            height: 400px;
+            border-radius: 10px;
+            img{
+                width: 400px;
+                height: 400px;
+                border-radius: 10px;
+            }
+        }
+        }
+        .ex-info{
+            width: 400px;
+            padding: 5px 10px;
+            color: #fff;
+            h1{
+                font-family: "Andada Pro" ,sans-serif;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            p{
+                font-family: "Open sans" ,sans-serif;
+                text-align: center;
+            }
+        }
+    }
+
+    .sec1-ex::after{
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        position: absolute;
+        opacity: .9;
+        z-index: -1;
+    }
+
+    .about-sec{
+        width: 50%;
+        margin-bottom: 100px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        .about-h1{
+            margin-bottom: 10px;
+            h1{
+                font-family: "Andada Pro", sans-serif;
+                font-size: 2rem;
+                font-weight: 400;
+
+            }
+        }
+        .about-info{
+            text-align: center;
+            font-family: "Open sans", sans-serif;
+            font-family: 1.5rem;
+            letter-spacing: .1rem;
+        }
+    }
+
+
+
+    .menu-list{
+        width: 100%;
+        padding: 10px 40px;
+        color: #fff;
+        background: url(../../img/slide4.jpg) center center no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-right: 20px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        .menu-h1{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            h1{
+                font-family: "Andada Pro" ,sans-serif;
+                font-size: 2.5rem;
+                font-weight: 400;
+            }
+        }
+        .menu-items{
+            width: 100%;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: row;
+            .menu-left{
+                width: 50%;
+                h1{
+                    font-family: "Andada Pro";
+                    font-size: 1.9rem;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                    border-bottom: 2px solid #fff;
+                    width: 150px;
+                }
+                .item-price{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: row;
+                    margin-bottom: 20px;
+                    h2{
+                        font-family: "Andada Pro";
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        padding: 0px 10px;
+                    }
+                    .item-h2{
+                        width: 700px;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
+                h2{
+                    font-family: "Andada Pro";
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    padding: 0px 10px;
+                }
+                p{
+                    font-family: "Andada Pro";
+                    font-size: 1rem;
+                    font-weight: 400;
+                    padding: 0px 10px;
+                    line-height: 1.2rem;
+                }
+            }
+            }
+            }
+            .menu-right{
+                width: 50%;
+                    h1{
+                        font-family: "Andada Pro";
+                        font-size: 1.9rem;
+                        font-weight: 400;
+                        margin-bottom: 20px;
+                        border-bottom: 2px solid #fff;
+                        width: 150px;
+                    }
+                    .item-price{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-direction: row;
+                        margin-bottom: 20px;
+                        h2{
+                            font-family: "Andada Pro";
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                            padding: 0px 10px;
+                        }
+                        .item-h2{
+                            width: 700px;
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: center;
+                            flex-direction: column;
+                            
+                    h2{
+                        font-family: "Andada Pro";
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        margin-bottom: 5px;
+                        padding: 0px 10px;
+                    }
+                    p{
+                        font-family: "Andada Pro";
+                        font-size: 1rem;
+                        font-weight: 400;
+                        padding: 0px 10px;
+                        line-height: 1.2rem;
+                    }
+                }
+                }
+                
+            }
+        }
+    }
+    .menu-list::after{
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        position: absolute;
+        opacity: .5;
+        z-index: -1;
+    }
+}
